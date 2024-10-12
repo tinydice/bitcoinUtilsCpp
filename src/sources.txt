@@ -1,0 +1,4 @@
+main.cpp
+src/wordlist.cpp
+src/helpers.cpp
+src/bip39.cpp

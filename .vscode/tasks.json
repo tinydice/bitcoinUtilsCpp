@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_all",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-g",                               
+                "@${workspaceFolder}/src/sources.txt",  // Use the @file flag to include all files listed in sources.txt
+                "-o",                               
+                "${workspaceFolder}/main"     
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
